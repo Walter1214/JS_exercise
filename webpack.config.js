@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const config = {
   entry: {
     app: './src/js/app.js'
@@ -13,6 +14,9 @@ const config = {
       title: 'index.html',
       template: './src/pug/index.pug'
     }),
+    new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: 'defer'
+    })
   ],
   module: {
     rules: [
