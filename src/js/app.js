@@ -1,1 +1,2 @@
-require ('./module/index.js')
+// require ('./module/index.js')
+require ('./string/')
