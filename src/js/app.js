@@ -1,2 +1,4 @@
 // require ('./module/index.js')
-require ('./string/')
+// require ('./string/')
+require ('./set')
+// require('./weakSet')
